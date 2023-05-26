@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+$primary-color:#7A7A7A;
+$secundary-color:#001542;
+$variant-color:#085454;
+$yellow-color:#FFB30D;
+$white-color:#fff;
+
+#modelo{
+    width: 100%;
+    height: 100vh;
+    background-color: $variant-color;
+    display: grid;
+    place-items: start center;
+
+    
+    .container{
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        height: 25vh;
+        gap: 3rem 0;
+        padding:3rem;
+        border-radius: 12px;
+        margin-top: 8rem;
+
+       .title{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 1rem 0;
+
+        h1{
+            color: $secundary-color;
+        }
+        
+        p{
+            width: 100%;
+            color:rgb(46, 46, 46);
+        }
+       }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: .5rem 0;
+
+            input{
+                width: 100%;
+                height: 35px;
+                border-radius: 5px;
+                padding-left: 1rem;
+                background-color: transparent;
+                border: 2px solid $variant-color;
+            }
+
+            label{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                color: $secundary-color;
+                font-weight: 600;
+            }
+
+            button{
+                width: 170px;
+                height: 35px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                font-weight: 500;
+                background-color: $variant-color;
+                color: $secundary-color;
+                margin-top: 2rem;
+            }
+
+        }
+    }
+}
