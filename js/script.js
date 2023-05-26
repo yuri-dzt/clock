@@ -9,14 +9,20 @@ const diaSemana = data.getDay();
 const diaMes = data.getDate();
 const mes = data.getMonth() + 1;
 const ano = data.getFullYear();
-const hora = data.getHours();
-const minutos = data.getMinutes();
-const segundos = data.getSeconds();
-
-
+const hr = data.getHours();
+const min =data.getMinutes();
+const sec = data.getSeconds();
     let month;
     let weekDays;
 
+    function zeroAEsquerda(num){
+        return num >= 10 ? num : `0${num}`
+    }
+
+    const segundos = zeroAEsquerda(sec)
+    const minutos = zeroAEsquerda(min)
+    const hora = zeroAEsquerda(hr)
+    
     switch (mes) {
         case 1:
             month = "Janeiro"
@@ -58,25 +64,25 @@ const segundos = data.getSeconds();
     
     switch (diaSemana) {
         case 0:
-            weekDays = 'sexta'
+            weekDays = 'Domingo'
             break;
         case 1:
-            weekDays = 'sexta'
+            weekDays = 'Segunda-Feira'
             break;
         case 2:
-            weekDays = 'sexta'
+            weekDays = 'Terça-Feira'
             break;
         case 3:
-            weekDays = 'sexta'
+            weekDays = 'Quarta-Feira'
             break;
         case 4:
-            weekDays = 'sexta'
+            weekDays = 'Quinta-Feira'
             break;
         case 5:
-            weekDays = 'sexta'
+            weekDays = 'Sexta-Feira'
             break;
         case 6:
-            weekDays = 'sexta'
+            weekDays = 'Sábado'
             break;
         default:
             
